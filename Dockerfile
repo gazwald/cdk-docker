@@ -16,6 +16,7 @@ RUN npm install -g aws-cdk
 RUN pip install --upgrade \
   awscli \
   aws-cdk.aws_apigateway \
+  aws-cdk.aws_apigatewayv2 \
   aws-cdk.aws_ec2 \
   aws_cdk.aws_ecs \
   aws_cdk.aws_certificatemanager \
