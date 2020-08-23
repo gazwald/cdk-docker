@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ARG email="you@example.com
+ARG email="you@example.com"
 ARG name="Your Name"
 
 RUN mkdir /app
