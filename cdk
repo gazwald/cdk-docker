@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-if [ -z ${AWS_ACCESS_KEY_ID+x} ]; then
-  ACCESS_KEY=$(awk '/aws_access_key_id/ {print $3;exit}' ~/.aws/credentials)
-fi
+if [ -e ~/.aws/credentials ]; then
+  if [ -z ${AWS_ACCESS_KEY_ID+x} ]; then
+    ACCESS_KEY=$(awk '/aws_access_key_id/ {print $3;exit}' ~/.aws/credentials)
+  fi
 
-if [ -z ${AWS_SECRET_ACCESS_KEY+x} ]; then
-  SECRET_KEY=$(awk '/aws_secret_access_key/ {print $3;exit}' ~/.aws/credentials)
+  if [ -z ${AWS_SECRET_ACCESS_KEY+x} ]; then
+    SECRET_KEY=$(awk '/aws_secret_access_key/ {print $3;exit}' ~/.aws/credentials)
+  fi
 fi
 
 if [ -z ${AWS_DEFAULT_REGION+x} ]; then
