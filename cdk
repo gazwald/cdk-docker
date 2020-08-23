@@ -20,6 +20,7 @@ else
 fi
 
 docker run --rm \
+           -it \
            -v $(pwd):/app \
            -e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-$ACCESS_KEY} \
            -e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-$SECRET_KEY} \
