@@ -14,6 +14,9 @@ fi
 
 if ! docker image ls --all | grep -q localhost/cdk; then
   ./build
+else
+  CREATED=$(docker images --format json  | jq '.[] | select(.Names == ["localhost/cdk:latest"]).Created')
+  echo "Using CDK image created ${CREATED}."
 fi
 
 docker run --rm \
