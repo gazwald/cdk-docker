@@ -12,7 +12,7 @@ RUN ln -s /usr/bin/pip3 /usr/bin/pip
 
 RUN pip install --upgrade pip
 RUN pip install boto3 json-spec yamllint
-RUN npm install -g aws-cdk
+RUN npm install -g aws-cdk@latest
 RUN pip install --upgrade \
   awscli \
   aws-cdk.aws_apigateway \
