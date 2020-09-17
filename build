@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+
+source $(dirname $0)/env
+
 mkdir -p ~/.cache/{npm,pip,apk}
 docker build -f Dockerfile \
-             -t cdk:latest \
+             -t ${IMAGE_NAME}:latest \
              -v ~/.cache/npm:/root/.npm \
              -v ~/.cache/pip:/root/.cache/pip \
              -v ~/.cache/apk:/etc/apk/cache \
-             --build-arg email=$(awk '/email/ {print $3}' ~/.gitconfig) \
-             --build-arg name=$(awk '/name/ {print $3}' ~/.gitconfig) 
