@@ -5,7 +5,7 @@ source $(dirname $0)/env
 if ! docker image ls --all | grep -q ${IMAGE_NAME}; then
   ./build
 else
-  CREATED=$(docker images --format json  | jq '.[] | select(.Names == ["localhost/cdk:latest"]).Created')
+  CREATED=$(docker images --format json  | jq --arg IMAGE ${IMAGE_NAME}:${IMAGE_VERSION} '.[] | select(.Names == [$IMAGE]).Created')
   echo "Using CDK image created ${CREATED}."
 fi
 
@@ -19,5 +19,5 @@ docker run --rm \
            -e GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL:-$GIT_EMAIL} \
            -e GIT_COMMITTER_NAME=${GIT_COMMITTER_NAME:-$GIT_NAME} \
            -e GIT_COMMITTER_EMAIL=${GIT_COMMITTER_EMAIL:-$GIT_EMAIL} \
-           ${IMAGE_NAME}:${IMAGE_VERSION}\
+           ${IMAGE_NAME}:${IMAGE_VERSION} \
            "$@" 
