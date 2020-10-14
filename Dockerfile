@@ -25,6 +25,7 @@ RUN pip install --upgrade \
   aws_cdk.aws_route53 \
   aws_cdk.aws_route53_targets \
   aws_cdk.aws_lambda_event_sources \
+  aws_cdk.aws_lambda_python \
   aws_cdk.aws_kms
 
 ENTRYPOINT [ "/usr/local/bin/cdk" ]
