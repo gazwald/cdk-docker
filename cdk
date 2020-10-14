@@ -11,6 +11,7 @@ fi
 
 docker run --rm \
            -it \
+           --network host \
            -v $(pwd):/app \
            -e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-$ACCESS_KEY} \
            -e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-$SECRET_KEY} \
@@ -19,5 +20,6 @@ docker run --rm \
            -e GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL:-$GIT_EMAIL} \
            -e GIT_COMMITTER_NAME=${GIT_COMMITTER_NAME:-$GIT_NAME} \
            -e GIT_COMMITTER_EMAIL=${GIT_COMMITTER_EMAIL:-$GIT_EMAIL} \
+           -e DOCKER_HOST="tcp://${HOST_IP}:${HOST_PORT}" \
            ${IMAGE_NAME}:${IMAGE_VERSION} \
            "$@" 

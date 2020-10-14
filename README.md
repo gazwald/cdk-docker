@@ -45,3 +45,13 @@ Using CDK image created "29 minutes ago".
   - AWS_NODEJS_CONNECTION_REUSE_ENABLED = 1
 ℹ️ No CDK environment variables
 ```
+
+## Docker, Lambda, and Bundling
+
+If you're using `core.BundlingOptions` then you'll need to start a Docker daemon (Podman in my case) that the CDK container can access to perform these task(s).
+
+Example podman daemon:
+
+```bash
+podman system service --timeout 0 tcp:0.0.0.0:9000 &
+```

@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
+# This was built using podman, not the default docker daemon
+# You'll likely need to remove all the -v options with default docker
 
 source $(dirname $0)/env
 
 mkdir -p ~/.cache/{npm,pip,apk}
 docker build -f Dockerfile \
+             --no-cache \
              -t ${IMAGE_NAME}:latest \
              -v ~/.cache/npm:/root/.npm \
              -v ~/.cache/pip:/root/.cache/pip \
