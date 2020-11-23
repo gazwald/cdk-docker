@@ -15,4 +15,4 @@ aws_cdk.aws_route53_targets==1.73.0
 aws_cdk.aws_route53_targets==1.73.0
 aws_cdk.aws_lambda_event_sources==1.74.0
 aws_cdk.aws_lambda_python==1.72.0
-aws_cdk.aws_kms==1.72.0
+aws_cdk.aws_kms==1.74.0
