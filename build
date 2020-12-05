@@ -2,6 +2,5 @@
 source $(dirname $0)/env
 
 docker build -f Dockerfile \
-             --no-cache \
              -t ${IMAGE_NAME}:latest \
              .

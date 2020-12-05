@@ -2,7 +2,7 @@ IMAGE_NAME="cdk"
 IMAGE_VERSION="latest"
 
 HOST_IP=$(hostname -i)
-HOST_PORT="2376"
+HOST_PORT="2375"
 
 # Gather AWS credentials if not set in the environment
 # This will grab the _first_ set of credentials it finds in ~/.aws/credentials
