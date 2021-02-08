@@ -9,7 +9,7 @@ aws_cdk.aws_s3_assets==1.73.0
 aws_cdk.aws_s3_deployment==1.72.0
 aws_cdk.aws_s3_notifications==1.75.0
 aws_cdk.aws_s3_deployment==1.72.0
-aws_cdk.aws_cloudfront==1.75.0
+aws_cdk.aws_cloudfront==1.88.0
 aws_cdk.aws_route53==1.72.0
 aws_cdk.aws_route53_targets==1.73.0
 aws_cdk.aws_lambda_event_sources==1.87.1
