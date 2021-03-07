@@ -49,3 +49,14 @@ Using CDK image created "29 minutes ago".
 ## Docker, Lambda, and Bundling
 
 If you're using `core.BundlingOptions` then you'll need to start a Docker daemon that the CDK container can access to perform these task(s).
+
+For example, on Linux:
+```bash
+sudo dockerd -H unix:///var/run/docker.sock -H tcp://$(hostname -i)
+```
+
+This will create the default Docker socket and a TCP socket for the CDK container to connect to.
+
+No consideration has been made for security with this; it's all convenience.
+
+On Mac OS X Docker is already running remotely in a local VM so you may just need to adjust the configuration in the `env` file.
