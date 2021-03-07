@@ -3,7 +3,7 @@ awscli==1.18.219
 aws_cdk.aws_ecs==1.92.0
 aws_cdk.aws_rds==1.75.0
 aws_cdk.aws_efs==1.86.0
-aws_cdk.aws_certificatemanager==1.75.0
+aws-cdk.aws-certificatemanager==1.87.1
 aws_cdk.aws_s3==1.92.0
 aws_cdk.aws_s3_assets==1.73.0
 aws_cdk.aws_s3_deployment==1.72.0
