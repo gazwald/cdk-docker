@@ -10,7 +10,7 @@ aws_cdk.aws_s3_deployment==1.92.0
 aws_cdk.aws_s3_notifications==1.92.0
 aws_cdk.aws_s3_deployment==1.92.0
 aws_cdk.aws_cloudfront==1.92.0
-aws_cdk.aws_route53==1.92.0
+aws_cdk.aws_route53==1.93.0
 aws_cdk.aws_route53_targets==1.92.0
 aws_cdk.aws_lambda_event_sources==1.92.0
 aws_cdk.aws_lambda_python==1.92.0
