@@ -5,7 +5,7 @@ aws_cdk.aws_rds==1.92.0
 aws_cdk.aws_efs==1.92.0
 aws_cdk.aws_certificatemanager==1.92.0
 aws_cdk.aws_s3==1.92.0
-aws_cdk.aws_s3_assets==1.92.0
+aws_cdk.aws_s3_assets==1.93.0
 aws_cdk.aws_s3_deployment==1.92.0
 aws_cdk.aws_s3_notifications==1.92.0
 aws_cdk.aws_s3_deployment==1.92.0
