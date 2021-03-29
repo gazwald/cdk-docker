@@ -1,10 +1,10 @@
-boto3==1.17.35
+boto3==1.17.39
 awscli==1.19.33
 aws_cdk.aws_ecs==1.94.1
 aws_cdk.aws_rds==1.94.1
 aws_cdk.aws_efs==1.94.1
 aws_cdk.aws_certificatemanager==1.94.1
-aws_cdk.aws_s3==1.94.1
+aws_cdk.aws_s3==1.95.1
 aws_cdk.aws_s3_assets==1.94.1
 aws_cdk.aws_s3_deployment==1.94.1
 aws_cdk.aws_s3_notifications==1.94.1
