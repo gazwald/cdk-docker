@@ -3,7 +3,7 @@ FROM node:alpine as base
 RUN mkdir /app
 WORKDIR /app
 
-RUN apk add --update python3 python3-dev git jq docker
+RUN apk add --no-cache --update python3 python3-dev git jq docker
 
 RUN python3 -m pip install --upgrade pip
 
