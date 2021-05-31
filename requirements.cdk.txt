@@ -16,5 +16,5 @@ aws_cdk.aws_lambda_event_sources==1.106.0
 aws_cdk.aws_lambda_python==1.106.0
 aws_cdk.aws_kms==1.106.0
 aws_cdk.aws_apigateway==1.106.0
-aws_cdk.aws_apigatewayv2==1.106.0
+aws_cdk.aws_apigatewayv2==1.106.1
 aws_cdk.aws_apigatewayv2_integrations==1.106.0
