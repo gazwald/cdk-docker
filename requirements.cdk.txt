@@ -1,7 +1,7 @@
 boto3==1.17.75
 awscli==1.19.75
 aws_cdk.aws_ecs==1.106.0
-aws_cdk.aws_rds==1.106.0
+aws_cdk.aws_rds==1.108.1
 aws_cdk.aws_efs==1.106.0
 aws_cdk.aws_certificatemanager==1.106.0
 aws_cdk.aws_s3==1.106.0
