@@ -7,7 +7,7 @@ aws_cdk.aws_certificatemanager==1.110.0
 aws_cdk.aws_s3==1.110.0
 aws_cdk.aws_s3_assets==1.110.0
 aws_cdk.aws_s3_deployment==1.110.0
-aws_cdk.aws_s3_notifications==1.110.0
+aws_cdk.aws_s3_notifications==1.111.0
 aws_cdk.aws_s3_deployment==1.110.0
 aws_cdk.aws_cloudfront==1.110.0
 aws_cdk.aws_route53==1.110.0
