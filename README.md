@@ -50,10 +50,17 @@ Using CDK image created "29 minutes ago".
 
 If you're using `core.BundlingOptions` then you'll need to start a Docker daemon that the CDK container can access to perform these task(s).
 
-For example, on Linux:
+Either pass through the docker socket into the container by adding the following to the `run` command:
+```bash
+-v /var/run/docker.sock:/var/run/docker.sock
+```
+
+or allow the access to the Docker daemon via TCP, for example:
 ```bash
 sudo dockerd -H unix:///var/run/docker.sock -H tcp://$(hostname -i)
 ```
+
+Note that the scripts within this repo currently assume that you'll be creating a TCP socket so adjust accordingly if you're binding the UNIX socket.
 
 This will create the default Docker socket and a TCP socket for the CDK container to connect to.
 
