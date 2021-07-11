@@ -1,21 +1,24 @@
-FROM node:alpine as base
+FROM node:alpine
 
 RUN mkdir /app
 WORKDIR /app
 
-RUN apk add --no-cache --update python3 python3-dev git jq docker
+RUN --mount=type=cache,target=/var/cache/apk \
+  apk add --update python3 python3-dev git jq docker
 
-RUN python3 -m pip install --upgrade pip
-
-FROM base
+RUN --mount=type=cache,target=/root/.cache/pip \
+  python3 -m pip install --upgrade pip
 
 COPY requirements.base.txt .
-RUN python3 -m pip install --upgrade -r requirements.base.txt
+RUN --mount=type=cache,target=/root/.cache/pip \
+  python3 -m pip install --upgrade -r requirements.base.txt
 
 COPY requirements.cdk.txt .
-RUN python3 -m pip install --upgrade -r requirements.cdk.txt
+RUN --mount=type=cache,target=/root/.cache/pip \
+  python3 -m pip install --upgrade -r requirements.cdk.txt
 
-RUN npm -g install aws-cdk@latest
+RUN --mount=type=cache,target=/root/.npm \
+  npm -g install aws-cdk@latest
 
 ENTRYPOINT [ "/usr/local/bin/cdk" ]
 CMD [ "help" ]
