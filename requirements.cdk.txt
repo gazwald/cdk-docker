@@ -10,7 +10,7 @@ aws_cdk.aws_kms==1.113.0
 aws_cdk.aws_lambda_event_sources==1.113.0
 aws_cdk.aws_lambda_python==1.113.0
 aws_cdk.aws_msk==1.113.0
-aws_cdk.aws_rds==1.113.0
+aws_cdk.aws_rds==1.117.0
 aws_cdk.aws_route53==1.113.0
 aws_cdk.aws_route53_targets==1.113.0
 aws_cdk.aws_s3==1.113.0
