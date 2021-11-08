@@ -19,4 +19,4 @@ aws_cdk.aws_s3_deployment==1.113.0
 aws_cdk.aws_s3_deployment==1.113.0
 aws_cdk.aws_s3_notifications==1.113.0
 awscli==1.19.105
-boto3==1.17.75
+boto3==1.19.12
