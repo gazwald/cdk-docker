@@ -5,7 +5,7 @@ aws_cdk.aws_certificatemanager==1.113.0
 aws_cdk.aws_cloudfront==1.113.0
 aws_cdk.aws_ecs==1.113.0
 aws_cdk.aws_efs==1.113.0
-aws_cdk.aws_elasticsearch==1.113.0
+aws_cdk.aws_elasticsearch==1.137.0
 aws_cdk.aws_kms==1.113.0
 aws_cdk.aws_lambda_event_sources==1.113.0
 aws_cdk.aws_lambda_python==1.113.0
