@@ -1,5 +1,5 @@
 aws_cdk.aws_apigateway==1.113.0
-aws_cdk.aws_apigatewayv2==1.113.0
+aws_cdk.aws_apigatewayv2==1.139.0
 aws_cdk.aws_apigatewayv2_integrations==1.113.0
 aws_cdk.aws_certificatemanager==1.113.0
 aws_cdk.aws_cloudfront==1.113.0
