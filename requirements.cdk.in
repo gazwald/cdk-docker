@@ -1,0 +1,22 @@
+-c requirements.base.in
+aws_cdk.aws_apigateway
+aws_cdk.aws_apigatewayv2
+aws_cdk.aws_apigatewayv2_integrations
+aws_cdk.aws_certificatemanager
+aws_cdk.aws_cloudfront
+aws_cdk.aws_ecs
+aws_cdk.aws_efs
+aws_cdk.aws_elasticsearch
+aws_cdk.aws_kms
+aws_cdk.aws_lambda_event_sources
+aws_cdk.aws_lambda_python
+aws_cdk.aws_msk
+aws_cdk.aws_rds
+aws_cdk.aws_route53
+aws_cdk.aws_route53_targets
+aws_cdk.aws_s3
+aws_cdk.aws_s3_assets
+aws_cdk.aws_s3_deployment
+aws_cdk.aws_s3_notifications
+awscli
+boto3
