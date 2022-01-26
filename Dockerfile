@@ -18,7 +18,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
   python3 -m pip install --upgrade -r requirements.cdk.txt
 
 RUN --mount=type=cache,target=/root/.npm \
-  npm -g install aws-cdk@1.140.0
+  npm -g install aws-cdk@2.8.0
 
 ENTRYPOINT [ "/usr/local/bin/cdk" ]
 CMD [ "help" ]
