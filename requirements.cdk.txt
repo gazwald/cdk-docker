@@ -462,11 +462,11 @@ aws-cdk.region-info==1.140.0
     #   aws-cdk.aws-lambda
     #   aws-cdk.aws-route53-targets
     #   aws-cdk.core
-awscli==1.22.43
+awscli==1.22.46
     # via -r requirements.cdk.in
 boto3==1.20.43
     # via -r requirements.cdk.in
-botocore==1.23.43
+botocore==1.23.46
     # via
     #   awscli
     #   boto3
