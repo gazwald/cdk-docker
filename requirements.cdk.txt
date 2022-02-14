@@ -8,465 +8,465 @@ attrs==21.4.0
     # via
     #   cattrs
     #   jsii
-aws-cdk.assets==1.140.0
+aws-cdk-assets==1.140.0
     # via
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-s3-assets
-aws-cdk.aws-acmpca==1.140.0
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-s3-assets
+aws-cdk-aws-acmpca==1.140.0
     # via
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-msk
-aws_cdk.aws_apigateway==1.140.0
-    # via
-    #   -r requirements.cdk.in
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-route53-targets
-aws_cdk.aws_apigatewayv2==1.140.0
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-msk
+aws-cdk-aws-apigateway==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-apigatewayv2-integrations
-aws-cdk.aws-apigatewayv2-integrations==1.140.0
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-route53-targets
+aws-cdk-aws-apigatewayv2==1.140.0
+    # via
+    #   -r requirements.cdk.in
+    #   aws-cdk-aws-apigatewayv2-integrations
+aws-cdk-aws-apigatewayv2-integrations==1.140.0
     # via -r requirements.cdk.in
-aws-cdk.aws-applicationautoscaling==1.140.0
+aws-cdk-aws-applicationautoscaling==1.140.0
     # via
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-lambda
-aws-cdk.aws-autoscaling==1.140.0
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-lambda
+aws-cdk-aws-autoscaling==1.140.0
     # via
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-ecs
-aws-cdk.aws-autoscaling-common==1.140.0
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-ecs
+aws-cdk-aws-autoscaling-common==1.140.0
     # via
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-aws-cdk.aws-autoscaling-hooktargets==1.140.0
-    # via aws-cdk.aws-ecs
-aws_cdk.aws_certificatemanager==1.140.0
-    # via
-    #   -r requirements.cdk.in
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-aws-cdk.aws-cloudformation==1.140.0
-    # via aws-cdk.custom-resources
-aws_cdk.aws_cloudfront==1.140.0
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+aws-cdk-aws-autoscaling-hooktargets==1.140.0
+    # via aws-cdk-aws-ecs
+aws-cdk-aws-certificatemanager==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3-deployment
-aws-cdk.aws-cloudwatch==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+aws-cdk-aws-cloudformation==1.140.0
+    # via aws-cdk-custom-resources
+aws-cdk-aws-cloudfront==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-stepfunctions
-aws-cdk.aws-codeguruprofiler==1.140.0
-    # via aws-cdk.aws-lambda
-aws-cdk.aws-codestarnotifications==1.140.0
-    # via aws-cdk.aws-sns
-aws-cdk.aws-cognito==1.140.0
+    #   -r requirements.cdk.in
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3-deployment
+aws-cdk-aws-cloudwatch==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-route53-targets
-aws-cdk.aws-dynamodb==1.140.0
-    # via aws-cdk.aws-lambda-event-sources
-aws-cdk.aws-ec2==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-stepfunctions
+aws-cdk-aws-codeguruprofiler==1.140.0
+    # via aws-cdk-aws-lambda
+aws-cdk-aws-codestarnotifications==1.140.0
+    # via aws-cdk-aws-sns
+aws-cdk-aws-cognito==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancing
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-globalaccelerator
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-lambda-python
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-servicediscovery
-    #   aws-cdk.custom-resources
-aws-cdk.aws-ecr==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-route53-targets
+aws-cdk-aws-dynamodb==1.140.0
+    # via aws-cdk-aws-lambda-event-sources
+aws-cdk-aws-ec2==1.140.0
     # via
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-lambda
-aws-cdk.aws-ecr-assets==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancing
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-globalaccelerator
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-lambda-python
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-servicediscovery
+    #   aws-cdk-custom-resources
+aws-cdk-aws-ecr==1.140.0
     # via
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-lambda
-aws-cdk.aws-ecs==1.140.0
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-lambda
+aws-cdk-aws-ecr-assets==1.140.0
+    # via
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-lambda
+aws-cdk-aws-ecs==1.140.0
     # via -r requirements.cdk.in
-aws_cdk.aws_efs==1.140.0
+aws-cdk-aws-efs==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-s3-deployment
-aws-cdk.aws-elasticloadbalancing==1.140.0
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-s3-deployment
+aws-cdk-aws-elasticloadbalancing==1.140.0
     # via
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-route53-targets
-aws-cdk.aws-elasticloadbalancingv2==1.140.0
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-route53-targets
+aws-cdk-aws-elasticloadbalancingv2==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-servicediscovery
-aws-cdk.aws-elasticsearch==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-servicediscovery
+aws-cdk-aws-elasticsearch==1.140.0
     # via -r requirements.cdk.in
-aws-cdk.aws-events==1.140.0
+aws-cdk-aws-events==1.140.0
     # via
-    #   aws-cdk.aws-ecr
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-stepfunctions
-aws-cdk.aws-globalaccelerator==1.140.0
-    # via aws-cdk.aws-route53-targets
-aws-cdk.aws-iam==1.140.0
+    #   aws-cdk-aws-ecr
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-stepfunctions
+aws-cdk-aws-globalaccelerator==1.140.0
+    # via aws-cdk-aws-route53-targets
+aws-cdk-aws-iam==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-autoscaling-common
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cloudwatch
-    #   aws-cdk.aws-codeguruprofiler
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-events
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-ssm
-    #   aws-cdk.aws-stepfunctions
-    #   aws-cdk.custom-resources
-aws-cdk.aws-kinesis==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-autoscaling-common
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cloudwatch
+    #   aws-cdk-aws-codeguruprofiler
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-events
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-ssm
+    #   aws-cdk-aws-stepfunctions
+    #   aws-cdk-custom-resources
+aws-cdk-aws-kinesis==1.140.0
     # via
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-lambda-event-sources
-aws_cdk.aws_kms==1.140.0
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-lambda-event-sources
+aws-cdk-aws-kms==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-ssm
-aws-cdk.aws-lambda==1.140.0
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-ssm
+aws-cdk-aws-lambda==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-lambda-python
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.custom-resources
-    #   aws-cdk.lambda-layer-awscli
-aws-cdk.aws-lambda-event-sources==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-lambda-python
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-custom-resources
+    #   aws-cdk-lambda-layer-awscli
+aws-cdk-aws-lambda-event-sources==1.140.0
     # via -r requirements.cdk.in
-aws-cdk.aws-lambda-python==1.140.0
+aws-cdk-aws-lambda-python==1.140.0
     # via -r requirements.cdk.in
-aws-cdk.aws-logs==1.140.0
+aws-cdk-aws-logs==1.140.0
     # via
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-stepfunctions
-    #   aws-cdk.custom-resources
-aws-cdk.aws-msk==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-stepfunctions
+    #   aws-cdk-custom-resources
+aws-cdk-aws-msk==1.140.0
     # via -r requirements.cdk.in
-aws-cdk.aws-rds==1.140.0
+aws-cdk-aws-rds==1.140.0
     # via -r requirements.cdk.in
-aws_cdk.aws_route53==1.140.0
+aws-cdk-aws-route53==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-servicediscovery
-aws_cdk.aws_route53_targets==1.140.0
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-servicediscovery
+aws-cdk-aws-route53-targets==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-ecs
-aws_cdk.aws_s3==1.140.0
+    #   aws-cdk-aws-ecs
+aws-cdk-aws-s3==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-stepfunctions
-aws_cdk.aws_s3_assets==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-stepfunctions
+aws-cdk-aws-s3-assets==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-s3-deployment
-aws-cdk.aws-s3-deployment==1.140.0
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-s3-deployment
+aws-cdk-aws-s3-deployment==1.140.0
     # via -r requirements.cdk.in
-aws_cdk.aws_s3_notifications==1.140.0
+aws-cdk-aws-s3-notifications==1.140.0
     # via
     #   -r requirements.cdk.in
-    #   aws-cdk.aws-lambda-event-sources
-aws-cdk.aws-sam==1.140.0
-    # via aws-cdk.aws-secretsmanager
-aws-cdk.aws-secretsmanager==1.140.0
+    #   aws-cdk-aws-lambda-event-sources
+aws-cdk-aws-sam==1.140.0
+    # via aws-cdk-aws-secretsmanager
+aws-cdk-aws-secretsmanager==1.140.0
     # via
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-aws-cdk.aws-servicediscovery==1.140.0
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+aws-cdk-aws-servicediscovery==1.140.0
     # via
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-ecs
-aws-cdk.aws-signer==1.140.0
-    # via aws-cdk.aws-lambda
-aws-cdk.aws-sns==1.140.0
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-ecs
+aws-cdk-aws-signer==1.140.0
+    # via aws-cdk-aws-lambda
+aws-cdk-aws-sns==1.140.0
     # via
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.custom-resources
-aws-cdk.aws-sns-subscriptions==1.140.0
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-custom-resources
+aws-cdk-aws-sns-subscriptions==1.140.0
     # via
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-lambda-event-sources
-aws-cdk.aws-sqs==1.140.0
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-lambda-event-sources
+aws-cdk-aws-sqs==1.140.0
     # via
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-aws-cdk.aws-ssm==1.140.0
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+aws-cdk-aws-ssm==1.140.0
     # via
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecs
-aws-cdk.aws-stepfunctions==1.140.0
-    # via aws-cdk.aws-apigateway
-aws-cdk.cloud-assembly-schema==1.140.0
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecs
+aws-cdk-aws-stepfunctions==1.140.0
+    # via aws-cdk-aws-apigateway
+aws-cdk-cloud-assembly-schema==1.140.0
     # via
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-ssm
-    #   aws-cdk.core
-    #   aws-cdk.cx-api
-aws-cdk.core==1.140.0
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-ssm
+    #   aws-cdk-core
+    #   aws-cdk-cx-api
+aws-cdk-core==1.140.0
     # via
-    #   aws-cdk.assets
-    #   aws-cdk.aws-acmpca
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-autoscaling-common
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cloudwatch
-    #   aws-cdk.aws-codeguruprofiler
-    #   aws-cdk.aws-codestarnotifications
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancing
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-events
-    #   aws-cdk.aws-globalaccelerator
-    #   aws-cdk.aws-iam
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-lambda-python
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-sam
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-servicediscovery
-    #   aws-cdk.aws-signer
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-ssm
-    #   aws-cdk.aws-stepfunctions
-    #   aws-cdk.custom-resources
-    #   aws-cdk.lambda-layer-awscli
-aws-cdk.custom-resources==1.140.0
+    #   aws-cdk-assets
+    #   aws-cdk-aws-acmpca
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-autoscaling-common
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cloudwatch
+    #   aws-cdk-aws-codeguruprofiler
+    #   aws-cdk-aws-codestarnotifications
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancing
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-events
+    #   aws-cdk-aws-globalaccelerator
+    #   aws-cdk-aws-iam
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-lambda-python
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-sam
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-servicediscovery
+    #   aws-cdk-aws-signer
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-ssm
+    #   aws-cdk-aws-stepfunctions
+    #   aws-cdk-custom-resources
+    #   aws-cdk-lambda-layer-awscli
+aws-cdk-custom-resources==1.140.0
     # via
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-globalaccelerator
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-route53
-aws-cdk.cx-api==1.140.0
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-globalaccelerator
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-route53
+aws-cdk-cx-api==1.140.0
     # via
-    #   aws-cdk.assets
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.core
-aws-cdk.lambda-layer-awscli==1.140.0
-    # via aws-cdk.aws-s3-deployment
-aws-cdk.region-info==1.140.0
+    #   aws-cdk-assets
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-core
+aws-cdk-lambda-layer-awscli==1.140.0
+    # via aws-cdk-aws-s3-deployment
+aws-cdk-region-info==1.140.0
     # via
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-iam
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.core
-awscli==1.22.43
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-iam
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-core
+awscli==1.22.54
     # via -r requirements.cdk.in
 boto3==1.20.43
     # via -r requirements.cdk.in
-botocore==1.23.43
+botocore==1.23.54
     # via
     #   awscli
     #   boto3
@@ -477,60 +477,60 @@ colorama==0.4.3
     # via awscli
 constructs==3.3.200
     # via
-    #   aws-cdk.assets
-    #   aws-cdk.aws-acmpca
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-autoscaling-common
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cloudwatch
-    #   aws-cdk.aws-codeguruprofiler
-    #   aws-cdk.aws-codestarnotifications
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancing
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-events
-    #   aws-cdk.aws-globalaccelerator
-    #   aws-cdk.aws-iam
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-lambda-python
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-sam
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-servicediscovery
-    #   aws-cdk.aws-signer
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-ssm
-    #   aws-cdk.aws-stepfunctions
-    #   aws-cdk.core
-    #   aws-cdk.custom-resources
-    #   aws-cdk.lambda-layer-awscli
+    #   aws-cdk-assets
+    #   aws-cdk-aws-acmpca
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-autoscaling-common
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cloudwatch
+    #   aws-cdk-aws-codeguruprofiler
+    #   aws-cdk-aws-codestarnotifications
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancing
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-events
+    #   aws-cdk-aws-globalaccelerator
+    #   aws-cdk-aws-iam
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-lambda-python
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-sam
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-servicediscovery
+    #   aws-cdk-aws-signer
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-ssm
+    #   aws-cdk-aws-stepfunctions
+    #   aws-cdk-core
+    #   aws-cdk-custom-resources
+    #   aws-cdk-lambda-layer-awscli
 docutils==0.15.2
     # via awscli
 jmespath==0.10.0
@@ -539,123 +539,123 @@ jmespath==0.10.0
     #   botocore
 jsii==1.52.1
     # via
-    #   aws-cdk.assets
-    #   aws-cdk.aws-acmpca
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-autoscaling-common
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cloudwatch
-    #   aws-cdk.aws-codeguruprofiler
-    #   aws-cdk.aws-codestarnotifications
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancing
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-events
-    #   aws-cdk.aws-globalaccelerator
-    #   aws-cdk.aws-iam
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-lambda-python
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-sam
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-servicediscovery
-    #   aws-cdk.aws-signer
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-ssm
-    #   aws-cdk.aws-stepfunctions
-    #   aws-cdk.cloud-assembly-schema
-    #   aws-cdk.core
-    #   aws-cdk.custom-resources
-    #   aws-cdk.cx-api
-    #   aws-cdk.lambda-layer-awscli
-    #   aws-cdk.region-info
+    #   aws-cdk-assets
+    #   aws-cdk-aws-acmpca
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-autoscaling-common
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cloudwatch
+    #   aws-cdk-aws-codeguruprofiler
+    #   aws-cdk-aws-codestarnotifications
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancing
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-events
+    #   aws-cdk-aws-globalaccelerator
+    #   aws-cdk-aws-iam
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-lambda-python
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-sam
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-servicediscovery
+    #   aws-cdk-aws-signer
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-ssm
+    #   aws-cdk-aws-stepfunctions
+    #   aws-cdk-cloud-assembly-schema
+    #   aws-cdk-core
+    #   aws-cdk-custom-resources
+    #   aws-cdk-cx-api
+    #   aws-cdk-lambda-layer-awscli
+    #   aws-cdk-region-info
     #   constructs
 publication==0.0.3
     # via
-    #   aws-cdk.assets
-    #   aws-cdk.aws-acmpca
-    #   aws-cdk.aws-apigateway
-    #   aws-cdk.aws-apigatewayv2
-    #   aws-cdk.aws-apigatewayv2-integrations
-    #   aws-cdk.aws-applicationautoscaling
-    #   aws-cdk.aws-autoscaling
-    #   aws-cdk.aws-autoscaling-common
-    #   aws-cdk.aws-autoscaling-hooktargets
-    #   aws-cdk.aws-certificatemanager
-    #   aws-cdk.aws-cloudformation
-    #   aws-cdk.aws-cloudfront
-    #   aws-cdk.aws-cloudwatch
-    #   aws-cdk.aws-codeguruprofiler
-    #   aws-cdk.aws-codestarnotifications
-    #   aws-cdk.aws-cognito
-    #   aws-cdk.aws-dynamodb
-    #   aws-cdk.aws-ec2
-    #   aws-cdk.aws-ecr
-    #   aws-cdk.aws-ecr-assets
-    #   aws-cdk.aws-ecs
-    #   aws-cdk.aws-efs
-    #   aws-cdk.aws-elasticloadbalancing
-    #   aws-cdk.aws-elasticloadbalancingv2
-    #   aws-cdk.aws-elasticsearch
-    #   aws-cdk.aws-events
-    #   aws-cdk.aws-globalaccelerator
-    #   aws-cdk.aws-iam
-    #   aws-cdk.aws-kinesis
-    #   aws-cdk.aws-kms
-    #   aws-cdk.aws-lambda
-    #   aws-cdk.aws-lambda-event-sources
-    #   aws-cdk.aws-lambda-python
-    #   aws-cdk.aws-logs
-    #   aws-cdk.aws-msk
-    #   aws-cdk.aws-rds
-    #   aws-cdk.aws-route53
-    #   aws-cdk.aws-route53-targets
-    #   aws-cdk.aws-s3
-    #   aws-cdk.aws-s3-assets
-    #   aws-cdk.aws-s3-deployment
-    #   aws-cdk.aws-s3-notifications
-    #   aws-cdk.aws-sam
-    #   aws-cdk.aws-secretsmanager
-    #   aws-cdk.aws-servicediscovery
-    #   aws-cdk.aws-signer
-    #   aws-cdk.aws-sns
-    #   aws-cdk.aws-sns-subscriptions
-    #   aws-cdk.aws-sqs
-    #   aws-cdk.aws-ssm
-    #   aws-cdk.aws-stepfunctions
-    #   aws-cdk.cloud-assembly-schema
-    #   aws-cdk.core
-    #   aws-cdk.custom-resources
-    #   aws-cdk.cx-api
-    #   aws-cdk.lambda-layer-awscli
-    #   aws-cdk.region-info
+    #   aws-cdk-assets
+    #   aws-cdk-aws-acmpca
+    #   aws-cdk-aws-apigateway
+    #   aws-cdk-aws-apigatewayv2
+    #   aws-cdk-aws-apigatewayv2-integrations
+    #   aws-cdk-aws-applicationautoscaling
+    #   aws-cdk-aws-autoscaling
+    #   aws-cdk-aws-autoscaling-common
+    #   aws-cdk-aws-autoscaling-hooktargets
+    #   aws-cdk-aws-certificatemanager
+    #   aws-cdk-aws-cloudformation
+    #   aws-cdk-aws-cloudfront
+    #   aws-cdk-aws-cloudwatch
+    #   aws-cdk-aws-codeguruprofiler
+    #   aws-cdk-aws-codestarnotifications
+    #   aws-cdk-aws-cognito
+    #   aws-cdk-aws-dynamodb
+    #   aws-cdk-aws-ec2
+    #   aws-cdk-aws-ecr
+    #   aws-cdk-aws-ecr-assets
+    #   aws-cdk-aws-ecs
+    #   aws-cdk-aws-efs
+    #   aws-cdk-aws-elasticloadbalancing
+    #   aws-cdk-aws-elasticloadbalancingv2
+    #   aws-cdk-aws-elasticsearch
+    #   aws-cdk-aws-events
+    #   aws-cdk-aws-globalaccelerator
+    #   aws-cdk-aws-iam
+    #   aws-cdk-aws-kinesis
+    #   aws-cdk-aws-kms
+    #   aws-cdk-aws-lambda
+    #   aws-cdk-aws-lambda-event-sources
+    #   aws-cdk-aws-lambda-python
+    #   aws-cdk-aws-logs
+    #   aws-cdk-aws-msk
+    #   aws-cdk-aws-rds
+    #   aws-cdk-aws-route53
+    #   aws-cdk-aws-route53-targets
+    #   aws-cdk-aws-s3
+    #   aws-cdk-aws-s3-assets
+    #   aws-cdk-aws-s3-deployment
+    #   aws-cdk-aws-s3-notifications
+    #   aws-cdk-aws-sam
+    #   aws-cdk-aws-secretsmanager
+    #   aws-cdk-aws-servicediscovery
+    #   aws-cdk-aws-signer
+    #   aws-cdk-aws-sns
+    #   aws-cdk-aws-sns-subscriptions
+    #   aws-cdk-aws-sqs
+    #   aws-cdk-aws-ssm
+    #   aws-cdk-aws-stepfunctions
+    #   aws-cdk-cloud-assembly-schema
+    #   aws-cdk-core
+    #   aws-cdk-custom-resources
+    #   aws-cdk-cx-api
+    #   aws-cdk-lambda-layer-awscli
+    #   aws-cdk-region-info
     #   constructs
 pyasn1==0.4.8
     # via rsa
