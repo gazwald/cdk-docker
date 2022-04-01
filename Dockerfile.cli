@@ -1,0 +1,10 @@
+FROM cdk-docker-base:latest
+
+RUN --mount=type=cache,target=/root/.npm \
+  npm -g install aws-cdk@latest
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip \
+    && cd /tmp \
+    && unzip awscliv2.zip \
+    && ./aws/install \
+    && rm /tmp/awscliv2.zip

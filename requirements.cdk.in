@@ -18,5 +18,4 @@ aws_cdk.aws_s3
 aws_cdk.aws_s3_assets
 aws_cdk.aws_s3_deployment
 aws_cdk.aws_s3_notifications
-awscli
 boto3

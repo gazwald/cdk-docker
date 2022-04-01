@@ -1,0 +1,8 @@
+FROM cdk-docker-cli:latest
+
+COPY requirements.cdk.txt .
+RUN --mount=type=cache,target=/root/.cache/pip \
+  python3 -m pip install --upgrade \
+                         -r requirements.cdk.txt
+
+ENTRYPOINT [ "cdk" ]

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.."
+source environment
+
+if [ ! -f requirements.base.txt ]; then
+  touch requirements.base.txt
+fi
+
+docker build \
+  -f Dockerfile.base \
+  -t ${IMAGE_NAME}-base:latest \
+  .

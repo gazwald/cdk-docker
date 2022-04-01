@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.."
+source environment
+
+./scripts/build-base
+
+docker build \
+  -f Dockerfile.cli \
+  -t ${IMAGE_NAME}-cli:latest \
+  .
