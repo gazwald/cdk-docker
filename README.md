@@ -2,9 +2,13 @@
 
 ## Configuration
 
+Most/all environment veriables and configuration options are passed in via sourcing the `env` file.
+
+### AWS and Git
+
 Assumes you have either of the following; in order of preference:
 
-### Environment variables
+#### Environment variables
 
 Will attempt to populate the container with the following environment variables:
 
@@ -18,7 +22,7 @@ Will attempt to populate the container with the following environment variables:
 
 If these are not set the script will attempt to pull them from configuration files.
 
-### Configuration files
+#### Configuration files
 
 Pulls first key from the following files:
 
