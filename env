@@ -1,8 +1,22 @@
-IMAGE_NAME="cdk"
+# vim syntax: bash
+
+IMAGE_NAME="docker-cdk"
 IMAGE_VERSION="latest"
 
-DOCKER_HOST_IP=$(hostname -i)
-DOCKER_HOST_PORT="2375"
+# Set this to either "socket" or "address"
+# Depending on how you want the container to interact
+# with the host docker daemon.
+DOCKER_ADDRESS_OR_SOCKET="socket"
+if [ "$DOCKER_ADDRESS_OR_SOCKET" = "socket" ];
+  HOST_SOCKET="/var/run/docker.sock"
+  DOCKER_OPTs="-v ${HOST_SOCKET}:${HOST_SOCKET}"
+elif [ "$DOCKER_ADDRESS_OR_SOCKET" = "address" ];
+  HOST_IP=$(hostname -i)
+  HOST_PORT="2375"
+  DOCKER_OPTS="-e DOCKER_HOST=tcp://${HOST_IP}:${HOST_PORT}"
+else
+  DOCKER_OPTS=""
+fi
 
 # Gather AWS credentials if not set in the environment
 # This will grab the _first_ set of credentials it finds in ~/.aws/credentials
