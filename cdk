@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
-ENTRYPOINT='--entrypoint "cdk"'
-
 ./scripts/run_cdk ${@}
