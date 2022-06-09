@@ -1,7 +1,7 @@
 FROM cdk-docker-base:latest
 
 RUN --mount=type=cache,target=/root/.npm \
-  npm -g install aws-cdk@latest
+  npm -g install aws-cdk@2.27.0
 
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip \
     && cd /tmp \
