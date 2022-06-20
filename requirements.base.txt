@@ -16,7 +16,7 @@ botocore==1.27.6
     # via
     #   boto3
     #   s3transfer
-botocore-stubs==1.27.6
+botocore-stubs==1.27.12
     # via
     #   -r requirements.base.in
     #   boto3-stubs
