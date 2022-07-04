@@ -10,7 +10,7 @@ black==22.3.0
     # via -r requirements.base.in
 boto3==1.24.6
     # via -r requirements.base.in
-boto3-stubs==1.24.6
+boto3-stubs==1.24.22
     # via -r requirements.base.in
 botocore==1.27.6
     # via
