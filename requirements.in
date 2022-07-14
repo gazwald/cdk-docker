@@ -1,4 +1,11 @@
--c requirements.base.in
+# Generic
+boto3
+boto3-stubs
+botocore-stubs
+json-spec
+pytest
+
+# AWS
 aws-cdk-lib
 aws_cdk.aws-lambda-python-alpha
 aws_cdk.aws-msk-alpha

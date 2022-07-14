@@ -1,9 +1,0 @@
-PyYAML
-black
-boto3
-boto3-stubs
-botocore-stubs
-isort
-json-spec
-pytest
-yamllint

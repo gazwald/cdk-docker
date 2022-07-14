@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-./scripts/run_cdk ${@}
+./scripts/run ${@}

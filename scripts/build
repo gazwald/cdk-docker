@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.." || exit
+source ./environment
+
+if [ ! -f requirements.txt ]; then
+  pip-compile --upgrade
+fi
+
+docker build \
+  -f Dockerfile \
+  -t ${IMAGE_NAME}:latest \
+  .
