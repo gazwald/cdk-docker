@@ -5,6 +5,6 @@
     "group:all"
   ],
   "pip-compile": {
-    "fileMatch": ["(^|/)requirements.*\\.in$"]
+    "fileMatch": ["(^|/)requirements\\.in$"]
   }
 }
