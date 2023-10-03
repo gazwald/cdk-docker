@@ -9,15 +9,15 @@ attrs==21.4.0
     #   cattrs
     #   jsii
     #   pytest
+aws-cdk-aws-lambda-python-alpha==2.31.2a0
+    # via -r requirements.in
+aws-cdk-aws-msk-alpha==2.31.2a0
+    # via -r requirements.in
 aws-cdk-lib==2.31.2
     # via
     #   -r requirements.in
-    #   aws-cdk.aws-lambda-python-alpha
-    #   aws-cdk.aws-msk-alpha
-aws-cdk.aws-lambda-python-alpha==2.31.2a0
-    # via -r requirements.in
-aws-cdk.aws-msk-alpha==2.31.2a0
-    # via -r requirements.in
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-aws-msk-alpha
 boto3==1.24.29
     # via -r requirements.in
 boto3-stubs==1.24.29
@@ -35,11 +35,9 @@ cattrs==22.1.0
 constructs==10.1.45
     # via
     #   -r requirements.in
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-aws-msk-alpha
     #   aws-cdk-lib
-    #   aws-cdk.aws-lambda-python-alpha
-    #   aws-cdk.aws-msk-alpha
-exceptiongroup==1.0.0rc8
-    # via cattrs
 iniconfig==1.1.1
     # via pytest
 jmespath==1.0.1
@@ -48,9 +46,9 @@ jmespath==1.0.1
     #   botocore
 jsii==1.62.0
     # via
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-aws-msk-alpha
     #   aws-cdk-lib
-    #   aws-cdk.aws-lambda-python-alpha
-    #   aws-cdk.aws-msk-alpha
     #   constructs
 json-spec==0.10.1
     # via -r requirements.in
@@ -60,9 +58,9 @@ pluggy==1.0.0
     # via pytest
 publication==0.0.3
     # via
+    #   aws-cdk-aws-lambda-python-alpha
+    #   aws-cdk-aws-msk-alpha
     #   aws-cdk-lib
-    #   aws-cdk.aws-lambda-python-alpha
-    #   aws-cdk.aws-msk-alpha
     #   constructs
 py==1.11.0
     # via pytest
@@ -87,5 +85,5 @@ typing-extensions==4.3.0
     #   boto3-stubs
     #   botocore-stubs
     #   jsii
-urllib3==1.26.10
+urllib3==1.26.17
     # via botocore
