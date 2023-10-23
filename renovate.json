@@ -6,14 +6,13 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true
     }
-  ],
-  "python": {
-    "enabled": false
-  },
-  "pip-compile": {
-    "fileMatch": ["(^|/)requirements\\.in$"]
-  }
+  ]
 }
