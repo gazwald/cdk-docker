@@ -1,5 +1,22 @@
 # Docker based CDK Python environment
 
+Originally intended as a standalone container for any and all Python CDK work this is now intended to be used as a base
+image where you add the required dependencies as needed by the individual repo(s). This is to avoid blowing out the size
+of the container even more and to ensure it's more flexible.
+
+The original scripts/configuration _should_ work as before but hasn't been tested in so, _so_, long.
+
+## Build args
+
+All major dependencies have their own build-arg with a default that may or may not be the latest version. It's
+recommended that you set these while building the container.
+
+- CDK_VERSION ([versions](https://www.npmjs.com/package/aws-cdk?activeTab=versions)]
+- DOCKER_VERSION ([versions](https://github.com/docker/cli/tags))
+- NODE_VERSION ([versions](https://nodejs.dev/en/about/releases/))
+- PIP_VERSION ([versions](https://github.com/pypa/pip/tags))
+- POETRY_VERSION ([versions](https://github.com/python-poetry/poetry/releases))
+
 ## Configuration
 
 Most/all environment veriables and configuration options are passed in via sourcing the `env` file.
@@ -30,7 +47,6 @@ Pulls first key from the following files:
 - `~/.aws/config`
 - `~/.gitconfig`
 
-
 ## Confirming it all works
 
 ```bash
@@ -38,6 +54,7 @@ Pulls first key from the following files:
 ```
 
 Should output something like this:
+
 ```
 Using CDK image created "29 minutes ago".
 ℹ️ CDK Version: 1.63.0 (build 7a68125)
@@ -55,11 +72,13 @@ Using CDK image created "29 minutes ago".
 If you're using `core.BundlingOptions` then you'll need to start a Docker daemon that the CDK container can access to perform these task(s).
 
 Either pass through the docker socket into the container by adding the following to the `run` command:
+
 ```bash
 -v /var/run/docker.sock:/var/run/docker.sock
 ```
 
 or allow the access to the Docker daemon via TCP, for example:
+
 ```bash
 sudo dockerd -H unix:///var/run/docker.sock -H tcp://$(hostname -i)
 ```
