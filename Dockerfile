@@ -40,6 +40,7 @@ ARG NODE_PATH="/tmp/node-v$NODE_VERSION.tar.xz"
 # Don't bother removing these afterwards if you're looking for a small container
 # CDK, Docker, and Python dependencies are gigabytes and these are kilobytes.
 #
+# hadolint ignore=DL3008
 RUN apt-get update -y \
  && apt-get install -y --no-install-recommends \
       ca-certificates \
@@ -48,13 +49,16 @@ RUN apt-get update -y \
       jq \
       unzip \
       xz-utils \
- && apt-get clean
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
 
 
 #
 # Install poetry and upgrade pip
 #
-RUN python3 -m pip install --upgrade \
+RUN python3 -m pip install \
+      --no-cache-dir \
+      --upgrade \
       "pip==$PIP_VERSION" \
       "poetry==$POETRY_VERSION"
 
