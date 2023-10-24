@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)" || exit
+
+CDK_VERSION="2.100.0"
+DOCKER_VERSION="24.0.6"
+NODE_VERSION="18.18.2"
+PIP_VERSION="23.3.1"
+POETRY_VERSION="1.6.1"
+
+{
+  echo "CDK_VERSION=$CDK_VERSION";
+  echo "DOCKER_VERSION=$DOCKER_VERSION";
+  echo "NODE_VERSION=$NODE_VERSION";
+  echo "PIP_VERSION=$PIP_VERSION";
+  echo "POETRY_VERSION=$POETRY_VERSION";
+} >> "$GITHUB_ENV"

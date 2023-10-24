@@ -17,10 +17,10 @@ ENV PIP_ROOT_USER_ACTION=ignore
 
 ARG TARGETARCH
 ARG CDK_VERSION="2.100.0"
-ARG POETRY_VERSION="1.6.1"
-ARG PIP_VERSION="23.3.1"
 ARG DOCKER_VERSION="24.0.6"
 ARG NODE_VERSION="18.18.2"
+ARG PIP_VERSION="23.3.1"
+ARG POETRY_VERSION="1.6.1"
 
 ARG AWS_URL_AMD="https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
 ARG AWS_URL_ARM="https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip"
