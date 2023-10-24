@@ -36,11 +36,11 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm64
-          build-args:
-            - CDK_VERSION=${{ env.CDK_VERSION }}
-            - DOCKER_VERSION=${{ env.DOCKER_VERSION }}
-            - NODE_VERSION=${{ env.NODE_VERSION }}
-            - PIP_VERSION=${{ env.PIP_VERSION }}
-            - POETRY_VERSION=${{ env.POETRY_VERSION }}
+          build-args: |
+            "CDK_VERSION=${{ env.CDK_VERSION }}"
+            "DOCKER_VERSION=${{ env.DOCKER_VERSION }}"
+            "NODE_VERSION=${{ env.NODE_VERSION }}"
+            "PIP_VERSION=${{ env.PIP_VERSION }}"
+            "POETRY_VERSION=${{ env.POETRY_VERSION }}"
           push: true
           tags: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
