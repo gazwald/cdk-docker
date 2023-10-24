@@ -29,7 +29,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "Set versions"
-        run: scripts/set_gituh_env
+        run: scripts/set_github_env
 
       - name: "Build and push"
         uses: docker/build-push-action@v5
