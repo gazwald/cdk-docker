@@ -17,7 +17,7 @@ ENV PIP_ROOT_USER_ACTION=ignore
 
 ARG TARGETARCH
 # renovate: datasource=pypi depName=aws-cdk-lib
-ARG CDK_VERSION="2.100.0"
+ARG CDK_VERSION="2.103.0"
 ARG DOCKER_VERSION="24.0.6"
 ARG NODE_VERSION="18.18.2"
 # renovate: datasource=pypi depName=pip
