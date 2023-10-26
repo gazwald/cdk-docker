@@ -16,10 +16,13 @@ LABEL org.opencontainers.image.description="AWS CDK base image for Python"
 ENV PIP_ROOT_USER_ACTION=ignore
 
 ARG TARGETARCH
+# renovate: datasource=pypi depName=aws-cdk-lib
 ARG CDK_VERSION="2.100.0"
 ARG DOCKER_VERSION="24.0.6"
 ARG NODE_VERSION="18.18.2"
+# renovate: datasource=pypi depName=pip
 ARG PIP_VERSION="23.3.1"
+# renovate: datasource=pypi depName=poetry
 ARG POETRY_VERSION="1.6.1"
 
 ARG AWS_URL_AMD="https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
