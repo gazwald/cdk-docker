@@ -8,7 +8,7 @@ export DOCKER_BUILDKIT=1
 # renovate: datasource=pypi depName=aws-cdk-lib
 export CDK_VERSION="2.100.0"
 # renovate: datasource=github-tags depName=docker/cli
-export DOCKER_VERSION="24.0.6"
+export DOCKER_VERSION="v24.0.6"
 # renovate: datasource=node-version
 export NODE_VERSION="18.18.2"
 # renovate: datasource=pypi depName=pip
