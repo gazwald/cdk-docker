@@ -54,3 +54,5 @@ jobs:
             "POETRY_VERSION=${{ env.POETRY_VERSION }}"
           push: true
           tags: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
+          cache-from: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
+          cache-to: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
