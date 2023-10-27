@@ -4,23 +4,12 @@
     "config:base",
     "group:all"
   ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "automerge": true
-    }
-  ],
   "customManagers": [
     {
       "customType": "regex",
       "fileMatch": [
-        "(^|/|\\.)([Dd]ocker|[Cc]ontainer)file$",
-        "(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$"
+        "Dockerfile",
+        "scripts/set-github-env",
       ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s(?:ENV|ARG) .+?_VERSION[ =]\"?(?<currentValue>.+?)\"?\\s"
