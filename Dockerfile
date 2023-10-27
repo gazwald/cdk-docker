@@ -18,9 +18,9 @@ ENV PIP_ROOT_USER_ACTION=ignore
 ARG TARGETARCH
 # renovate: datasource=pypi depName=aws-cdk-lib
 ARG CDK_VERSION="2.103.1"
-# renovate: datasource=github-tags depName=docker/cli
+# renovate: datasource=docker depName=docker versioning=docker
 ARG DOCKER_VERSION="v24.0.7"
-# renovate: datasource=node-version
+ # renovate: datasource=github-tags depName=nodejs/node versioning=node
 ARG NODE_VERSION="18.18.2"
 # renovate: datasource=pypi depName=pip
 ARG PIP_VERSION="23.3.1"
