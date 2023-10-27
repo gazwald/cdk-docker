@@ -52,15 +52,14 @@ SHELL ["/bin/bash", "-euo", "pipefail", "-c"]
 # Don't bother removing these afterwards if you're looking for a small container
 # CDK, Docker, and Python dependencies are gigabytes and these are kilobytes.
 #
-# hadolint ignore=DL3008
 RUN apt-get update -y \
  && apt-get install -y --no-install-recommends \
-      ca-certificates \
-      curl \
-      git \
-      jq \
-      unzip \
-      xz-utils \
+      ca-certificates=20230311 \
+      curl=7.88.1-10+deb12u4 \
+      git=1:2.39.2-1.1 \
+      jq=1.6-2.1 \
+      unzip=6.0-28 \
+      xz-utils=5.4.1-0.2 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -108,7 +107,7 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
          --show-error \
          --location \
          --output $DOCKER_PATH \
-         ${DOCKER_URL//DOCKER_VERSION/$DOCKER_VERSION} \
+         ${DOCKER_URL//DOCKER_VERSION/${DOCKER_VERSION//v/}} \
  && tar --extract \
         --strip-components 1 \
         --file $DOCKER_PATH \
