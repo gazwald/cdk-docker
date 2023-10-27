@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 cd "$(git rev-parse --show-toplevel)" || exit
+
+# shellcheck disable=SC1091
 source scripts/set-env
 
 docker build \
