@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
 cd "$(git rev-parse --show-toplevel)" || exit
-
-DOCKER_BUILDKIT=1
+source scripts/set-env
 
 docker build \
-  -f Dockerfile \
-  -t cdk-docker:latest \
+  --build-arg CDK_VERSION="$CDK_VERSION" \
+  --build-arg DOCKER_VERSION="$DOCKER_VERSION" \
+  --build-arg NODE_VERSION="$NODE_VERSION" \
+  --build-arg PIP_VERSION="$PIP_VERSION" \
+  --build-arg POETRY_VERSION="$POETRY_VERSION" \
+  --file Dockerfile \
+  --tag cdk-docker:latest \
   .

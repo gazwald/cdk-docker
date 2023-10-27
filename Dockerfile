@@ -27,17 +27,24 @@ ARG PIP_VERSION="23.3.1"
 # renovate: datasource=pypi depName=poetry
 ARG POETRY_VERSION="1.6.1"
 
-ARG AWS_URL_AMD="https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
-ARG AWS_URL_ARM="https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip"
+ARG AWS_URL_BASE="https://awscli.amazonaws.com/awscli-exe-linux"
+ARG AWS_URL_AMD="$AWS_URL_BASE-x86_64.zip"
+ARG AWS_URL_ARM="$AWS_URL_BASE-aarch64.zip"
 ARG AWS_PATH="/tmp/awscliv2.zip"
 
-ARG DOCKER_URL_AMD="https://download.docker.com/linux/static/stable/x86_64/docker-$DOCKER_VERSION.tgz"
-ARG DOCKER_URL_ARM="https://download.docker.com/linux/static/stable/aarch64/docker-$DOCKER_VERSION.tgz"
-ARG DOCKER_PATH="/tmp/docker-$DOCKER_VERSION.tgz"
+ARG DOCKER_URL_BASE="https://download.docker.com/linux/static/stable"
+ARG DOCKER_URL_AMD="$DOCKER_URL_BASE/x86_64"
+ARG DOCKER_URL_ARM="$DOCKER_URL_BASE/aarch64"
+ARG DOCKER_PATH="/tmp/docker.tgz"
+# DOCKER_VERSION is not a variable here; it's replaced later during the cURL command
+ARG DOCKER_ARCHIVE="docker-DOCKER_VERSION.tgz"
 
-ARG NODE_URL_AMD="https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"
-ARG NODE_URL_ARM="https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-arm64.tar.xz"
+ARG NODE_URL_BASE="https://nodejs.org/dist"
+ARG NODE_URL_AMD="$NODE_URL_BASE/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"
+ARG NODE_URL_ARM="$NODE_URL_BASE/v$NODE_VERSION/node-v$NODE_VERSION-linux-arm64.tar.xz"
 ARG NODE_PATH="/tmp/node-v$NODE_VERSION.tar.xz"
+
+SHELL ["/bin/bash", "-euo", "pipefail", "-c"]
 
 #
 # Install dependencies, and jq because it's small and useful
@@ -92,16 +99,16 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
 # Install statically compiled Docker CLI
 #
 RUN if [ "$TARGETARCH" = "arm64" ]; then \
-        export DOCKER_URL=$DOCKER_URL_ARM; \
+        export DOCKER_URL=$DOCKER_URL_ARM/$DOCKER_ARCHIVE; \
     else \
-        export DOCKER_URL=$DOCKER_URL_AMD; \
+        export DOCKER_URL=$DOCKER_URL_AMD/$DOCKER_ARCHIVE; \
     fi \
  && curl --fail \
          --silent \
          --show-error \
          --location \
          --output $DOCKER_PATH \
-         $DOCKER_URL \
+         ${DOCKER_URL//DOCKER_VERSION/$DOCKER_VERSION} \
  && tar --extract \
         --strip-components 1 \
         --file $DOCKER_PATH \
