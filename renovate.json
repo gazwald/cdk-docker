@@ -4,6 +4,13 @@
     "config:base",
     "group:all"
   ],
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
