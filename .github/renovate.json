@@ -7,7 +7,10 @@
   "packageRules": [
     {
       "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true
     }
   ],
@@ -16,7 +19,7 @@
       "customType": "regex",
       "fileMatch": [
         "^Dockerfile$",
-        "^scripts\/set-env$",
+        "^scripts/set-env$"
       ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s(?:ENV|ARG|export) .+?_VERSION[ =]\"?(?<currentValue>.+?)\"?\\s"
