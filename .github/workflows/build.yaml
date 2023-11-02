@@ -1,3 +1,4 @@
+---
 name: Build
 
 on:
@@ -7,16 +8,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@v4
-
-      - name: "Hadolint"
-        uses: hadolint/hadolint-action@v3.1.0
-
-      - name: "Shellcheck"
-        run: shellcheck scripts/*
+    uses: gazwald/cdk-docker/.github/workflows/lint.yaml@main
 
   build:
     runs-on: ubuntu-latest
@@ -53,6 +45,8 @@ jobs:
             "PIP_VERSION=${{ env.PIP_VERSION }}"
             "POETRY_VERSION=${{ env.POETRY_VERSION }}"
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
-          cache-from: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
-          cache-to: ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ env.CDK_VERSION }}
+          cache-from: ghcr.io/${{ github.repository }}:latest
+          cache-to: ghcr.io/${{ github.repository }}:latest
