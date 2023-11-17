@@ -6,7 +6,7 @@ cd "$(git rev-parse --show-toplevel)" || exit
 export DOCKER_BUILDKIT=1
 
 # renovate: datasource=pypi depName=aws-cdk-lib
-export CDK_VERSION="2.108.1"
+export CDK_VERSION="2.110.0"
 # renovate: datasource=docker depName=docker versioning=docker
 export DOCKER_VERSION="24.0.7"
  # renovate: datasource=github-tags depName=nodejs/node versioning=node
@@ -14,4 +14,4 @@ export NODE_VERSION="20.9.0"
 # renovate: datasource=pypi depName=pip
 export PIP_VERSION="23.3.1"
 # renovate: datasource=pypi depName=poetry
-export POETRY_VERSION="1.7.0"
+export POETRY_VERSION="1.7.1"
