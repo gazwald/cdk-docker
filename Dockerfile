@@ -17,7 +17,7 @@ ENV PIP_ROOT_USER_ACTION=ignore
 
 ARG TARGETARCH
 # renovate: datasource=pypi depName=aws-cdk-lib
-ARG CDK_VERSION="2.108.1"
+ARG CDK_VERSION="2.110.0"
 # renovate: datasource=docker depName=docker versioning=docker
 ARG DOCKER_VERSION="v24.0.7"
  # renovate: datasource=github-tags depName=nodejs/node versioning=node
@@ -25,7 +25,7 @@ ARG NODE_VERSION="20.9.0"
 # renovate: datasource=pypi depName=pip
 ARG PIP_VERSION="23.3.1"
 # renovate: datasource=pypi depName=poetry
-ARG POETRY_VERSION="1.7.0"
+ARG POETRY_VERSION="1.7.1"
 
 ARG AWS_URL_BASE="https://awscli.amazonaws.com/awscli-exe-linux"
 ARG AWS_URL_AMD="$AWS_URL_BASE-x86_64.zip"
