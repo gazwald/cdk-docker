@@ -33,7 +33,7 @@ jobs:
         run: scripts/set-github-env
 
       - name: "Build dry run"
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           platforms: linux/amd64,linux/arm64
