@@ -5,7 +5,7 @@
 # A: Yes, but this container is so large than the space saving is negligable
 #    while the readability and caching is improved
 
-FROM python:3.12-slim
+FROM python:3.13-slim
 
 LABEL org.opencontainers.image.authors="gary.brandon@gmail.com"
 LABEL org.opencontainers.image.url="https://github.com/gazwald/cdk-docker"
@@ -17,15 +17,15 @@ ENV PIP_ROOT_USER_ACTION=ignore
 
 ARG TARGETARCH
 # renovate: datasource=pypi depName=aws-cdk-lib
-ARG CDK_VERSION="2.146.0"
+ARG CDK_VERSION="2.164.0"
 # renovate: datasource=docker depName=docker versioning=docker
-ARG DOCKER_VERSION="26.1.4"
+ARG DOCKER_VERSION="27.3.1"
  # renovate: datasource=github-tags depName=nodejs/node versioning=node
-ARG NODE_VERSION="20.15.0"
+ARG NODE_VERSION="20.18.0"
 # renovate: datasource=pypi depName=pip
-ARG PIP_VERSION="24.0"
+ARG PIP_VERSION="24.2"
 # renovate: datasource=pypi depName=poetry
-ARG POETRY_VERSION="1.8.3"
+ARG POETRY_VERSION="1.8.4"
 
 ARG AWS_URL_BASE="https://awscli.amazonaws.com/awscli-exe-linux"
 ARG AWS_URL_AMD="$AWS_URL_BASE-x86_64.zip"
